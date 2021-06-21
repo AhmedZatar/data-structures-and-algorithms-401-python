@@ -9,3 +9,5 @@
 | LL Zip | [Press Here!](data_structures_and_algorithms_401_python/Challenges/ll_zip/README.md) |
 | Stacks and Queues | [Press Here!](data_structures_and_algorithms_401_python/Data_Structures/stacks_and_queues/README.md) |
 | Queue with Stacks | [Press Here!](data_structures_and_algorithms_401_python/Challenges/queue_with_stacks/README.md) |
+| Fifo Animal Shelter | [Press Here!](data_structures_and_algorithms_401_python/Challenges/fifo_animal_shelter/README.md) |
+
