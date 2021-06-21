@@ -2,7 +2,7 @@
 
 | Subject | The link |
 | --- | --- |
-| Array Reverse | [Press Here!](data-structures-and-algorithms-401-python/data_structures_and_algorithms_401_python/Challenges/array_reverse/README.md) |
+| Array Reverse | [Press Here!](data_structures_and_algorithms_401_python/Challenges/array_reverse/README.md) |
 | Array Shift | [Press Here!](/home/ahmed/data-structures-and-algorithms-401-python/data_structures_and_algorithms_401_python/Challenges/array_shift/README.md) |
 | Array Binary Search | [Press Here!](/home/ahmed/data-structures-and-algorithms-401-python/data_structures_and_algorithms_401_python/Challenges/array_binary_search/README.md) |
 | Linked List | [Press Here!](/home/ahmed/data-structures-and-algorithms-401-python/data_structures_and_algorithms_401_python/Data_Structures/linked_list/README.md) |
