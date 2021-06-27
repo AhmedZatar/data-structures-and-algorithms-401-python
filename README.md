@@ -12,7 +12,7 @@
 | Fifo Animal Shelter | [Press Here!](data_structures_and_algorithms_401_python/Challenges/fifo_animal_shelter/README.md) |
 | Multi Bracket Validation | [Press Here!](data_structures_and_algorithms_401_python/Challenges/multi_bracket_validation/README.md) |
 | Trees | [Press Here!](data_structures_and_algorithms_401_python/Data_Structures/trees/README.md) |
-| Trees | [Press Here!](data_structures_and_algorithms_401_python/Challenges/tree_max/README.md) |
+| Trees Max | [Press Here!](data_structures_and_algorithms_401_python/Challenges/tree_max/README.md) |
 
 
 
