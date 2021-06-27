@@ -39,14 +39,15 @@ def test_add_left_right_to_tree():
     tree= BinarySearchTree()
     tree.add(5)
     tree.add(4)
+    tree.add(4)
     tree.add(7)
     
     assert tree.root.left.value == 4
     assert tree.root.right.value == 7
-    assert tree.add(4) == 'duplicates value'
-    assert tree.pre_order()=='547'
-    assert tree.in_order()=='457'
-    assert tree.post_order()=='475'
+    assert tree.root.left.right.value == 4
+    assert tree.pre_order()=='5447'
+    assert tree.in_order()=='4457'
+    assert tree.post_order()=='4475'
 
 
 

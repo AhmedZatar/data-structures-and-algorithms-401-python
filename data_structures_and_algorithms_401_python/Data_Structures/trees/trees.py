@@ -78,23 +78,15 @@ class BinaryTree:
 
 
 class BinarySearchTree(BinaryTree):
-    def __init__(self):
-        self.root = None
+
     def add(self,value):
 
         if self.root ==None:
             self.root=Node(value)
         else:
             node = Node(value)
-            x=None
 
             def traverse(root):
-                
-                if root.value==node.value:
-                    nonlocal x
-                    x= 'duplicates value'
-                    return
-
                 if node.value < root.value:
 
                     if root.left:
@@ -111,7 +103,6 @@ class BinarySearchTree(BinaryTree):
                         root.right=node
 
             traverse(self.root)
-            return x
     
     def contains(self,value):
         x=False
