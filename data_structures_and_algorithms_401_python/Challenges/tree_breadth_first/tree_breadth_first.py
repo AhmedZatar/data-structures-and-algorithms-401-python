@@ -1,3 +1,4 @@
+from data_structures_and_algorithms_401_python.Data_Structures.stacks_and_queues.stacks_and_queues import Queue
 from re import escape
 
 
@@ -6,6 +7,8 @@ class Node:
         self.value = value
         self.left = None
         self.right = None
+
+           
 
 class BinaryTree:
     def __init__(self):
@@ -78,20 +81,49 @@ class BinaryTree:
         return output
 
     def max(self):
-        self.pre_order()
+        self.max=0
+        def traverse(node):
+
+            if node.left:
+              traverse(node.left)
+              if node.left.value>self.max:
+                self.max=node.left.value
+
+            if node.right:
+              traverse(node.right)
+              if node.right.value>self.max:
+                self.max=node.right.value
+
+        traverse(self.root)
         
-        while not len(self.treelist)==1:
+        if self.root.value>self.max:
+          return self.root.value
 
-          if type(self.treelist[-1])!=type(1) or type(self.treelist[-2])!=type(1):
-            return 'All tree input should be numbers'     
-          if self.treelist[-1]>self.treelist[-2]:
-            self.treelist.remove(self.treelist[-2])
-          else:
-           self.treelist.remove(self.treelist[-1])
-        return self.treelist[0]
+        return self.max
 
-    def breadth_first(self):
-        pass
+
+
+        
+def breadth_first(tree):
+    queue = [tree.root]
+    breadth=[]
+    if tree.root==None:
+        return []
+   
+    while queue:
+
+
+        node=queue[0]
+        if node.left != None:
+            queue+=[node.left]
+            
+        if node.right != None:
+            queue+=[node.right]
+
+        breadth+=[queue[0].value]
+        queue=queue[1:]
+    return breadth
+
 
 
 
@@ -106,6 +138,6 @@ if __name__ == "__main__":
     tree.root.left.right.right = Node(11)
     tree.root.right.right = Node(9)
     tree.root.right.right.left = Node(4)
-    print(tree.breadth_first())
+    print(breadth_first(tree))
 
 
