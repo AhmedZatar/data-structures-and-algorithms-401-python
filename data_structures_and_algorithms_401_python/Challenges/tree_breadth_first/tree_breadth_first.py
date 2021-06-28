@@ -78,25 +78,20 @@ class BinaryTree:
         return output
 
     def max(self):
-        self.max=0
-        def traverse(node):
-
-            if node.left:
-              traverse(node.left)
-              if node.left.value>self.max:
-                self.max=node.left.value
-
-            if node.right:
-              traverse(node.right)
-              if node.right.value>self.max:
-                self.max=node.right.value
-
-        traverse(self.root)
+        self.pre_order()
         
-        if self.root.value>self.max:
-          return self.root.value
+        while not len(self.treelist)==1:
 
-        return self.max
+          if type(self.treelist[-1])!=type(1) or type(self.treelist[-2])!=type(1):
+            return 'All tree input should be numbers'     
+          if self.treelist[-1]>self.treelist[-2]:
+            self.treelist.remove(self.treelist[-2])
+          else:
+           self.treelist.remove(self.treelist[-1])
+        return self.treelist[0]
+
+    def breadth_first(self):
+        pass
 
 
 
@@ -111,7 +106,6 @@ if __name__ == "__main__":
     tree.root.left.right.right = Node(11)
     tree.root.right.right = Node(9)
     tree.root.right.right.left = Node(4)
-    print(tree.pre_order())
-    print(tree.treelist)
-    print(tree.max())
+    print(tree.breadth_first())
+
 
