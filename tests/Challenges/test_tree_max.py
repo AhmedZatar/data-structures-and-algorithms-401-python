@@ -10,8 +10,8 @@ def test_max_expected_failure(prepared_tree):
     assert prepared_tree.max()!=9
 
 def test_edge_Case(prepared_tree):
-    prepared_tree.root.left.right = Node('Ahmed')
-    assert prepared_tree.max()=='All tree input should be numbers'
+    prepared_tree.root = Node(20)
+    assert prepared_tree.max()==20
 
 @pytest.fixture
 def prepared_tree():

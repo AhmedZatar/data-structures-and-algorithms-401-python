@@ -11,24 +11,28 @@ Find the maximum value stored in the tree.
 
 ## Approach & Efficiency
 
-Ceate  method called max, call pre_order() method, creat while loop while len(self.treelist)!=1, while looping check if the last two index in the list are string if it is return error massege, check if the last index more than Before last  index if it is remove the before last index, else remove the last index, after loop breake return the 0 index
+Ceate  method called max, declear varible maxvalue = 0 Create function call traverse take a node as argument inside it i will check if there is left node and check if there is right node inside every check i will call the function again and check if the value of the node more than the max value if it is the value of the node will be the new max, for firt time we will call the function with the root, at end check if the vlaue of the root more than max if it is the max will be the root value
+
+### Big O :
+* Time--> O(n)
+* space--> O(1)
 
 ## Solution
 ```
 input = tree in the pic
 Expected output = 11
-self.treelist= [2, 7, 2, 6, 5, 11, 5, 9, 4]
-#1 while not 10==1: True 
-   if int !=int or int !=int : False
 
-if 4>9: False
-else :
-   self.treelist.remove(4)
-self.treelist= [7, 11]
-#8 while not 2==1 : True
-   if int !=int or int !=int : False
-  if 11>7: True
-self.treelist.remove(7)
+self.max=0
+traverse(Node(2))
+
+if Node(7): True
+   traverse(Node(7))
+...
+if Node(5): True
+   traverse(Node(5))
+...
+
+if 2>11 #False
 
 return 11
 ```

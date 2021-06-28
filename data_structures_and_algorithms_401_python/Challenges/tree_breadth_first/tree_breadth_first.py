@@ -1,3 +1,4 @@
+from data_structures_and_algorithms_401_python.Data_Structures.stacks_and_queues.stacks_and_queues import Queue
 from re import escape
 
 
@@ -6,6 +7,8 @@ class Node:
         self.value = value
         self.left = None
         self.right = None
+
+           
 
 class BinaryTree:
     def __init__(self):
@@ -100,6 +103,30 @@ class BinaryTree:
 
 
 
+        
+def breadth_first(tree):
+    queue = [tree.root]
+    breadth=[]
+    if tree.root==None:
+        return []
+   
+    while queue:
+
+
+        node=queue[0]
+        if node.left != None:
+            queue+=[node.left]
+            
+        if node.right != None:
+            queue+=[node.right]
+
+        breadth+=[queue[0].value]
+        queue=queue[1:]
+    return breadth
+
+
+
+
 if __name__ == "__main__":
     tree = BinaryTree()
     tree.root = Node(2)
@@ -111,7 +138,6 @@ if __name__ == "__main__":
     tree.root.left.right.right = Node(11)
     tree.root.right.right = Node(9)
     tree.root.right.right.left = Node(4)
-    print(tree.pre_order())
-    print(tree.treelist)
-    print(tree.max())
+    print(breadth_first(tree))
+
 
