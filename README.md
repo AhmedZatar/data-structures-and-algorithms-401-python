@@ -14,6 +14,10 @@
 | Trees | [Press Here!](data_structures_and_algorithms_401_python/Data_Structures/trees/README.md) |
 | Tree Max | [Press Here!](data_structures_and_algorithms_401_python/Challenges/tree_max/README.md) |
 | Tree Breadth First | [Press Here!](data_structures_and_algorithms_401_python/Challenges/tree_breadth_first/README.md) |
+| Tree Fizz Buzz | [Press Here!](data_structures_and_algorithms_401_python/Challenges/tree_fizz_buzz/README.md) |
+
+
+
 
 
 
