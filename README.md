@@ -16,6 +16,7 @@
 | Tree Breadth First | [Press Here!](data_structures_and_algorithms_401_python/Challenges/tree_breadth_first/README.md) |
 | Tree Fizz Buzz | [Press Here!](data_structures_and_algorithms_401_python/Challenges/tree_fizz_buzz/README.md) |
 | Insertion Sort | [Press Here!](data_structures_and_algorithms_401_python/Challenges/insertion_sort/README.md) |
+| Merge Sort | [Press Here!](data_structures_and_algorithms_401_python/Challenges/merge_sort/README.md) |
 
 
 
