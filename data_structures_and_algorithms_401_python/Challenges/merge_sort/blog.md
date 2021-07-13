@@ -52,10 +52,8 @@ Sample Array: [8,4,23,42,16,15]
 
 ## Efficency
 
-Time: O(log(n))
+Time: O(nlog(n))
 
-the choice of the next element on which to perform some action is one of several possibilities, and only one will need to be chosen.
+Space: O(n)
 
-Space: O(1)
-
-No additional space is being created. This array is being sorted in place keeping the space at constant O(1).
+Overall time complexity of Merge sort is O(nLogn). It is more efficient as it is in worst case also the runtime is O(nlogn) The space complexity of Merge sort is O(n). This means that this algorithm takes a lot of space and may slower down operations for the last data sets

@@ -15,8 +15,8 @@ Create function take an array as argument than sort it in Merge Sort.
 7. call merge with the left, right and array
 
 ### Big O :
-* Time--> O(log(n))
-* space--> O(1)
+* Time--> O(nlog(n))
+* space--> O(n)
 ## Solution
 ```
 input = [8,4,23,42,16,15]
