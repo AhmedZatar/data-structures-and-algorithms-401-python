@@ -17,7 +17,6 @@ class BinaryTree:
         if not self.root:
             return 'The Tree is empty'
 
-
         def traverse(node):
             nonlocal output 
             output += str(node.value) 
