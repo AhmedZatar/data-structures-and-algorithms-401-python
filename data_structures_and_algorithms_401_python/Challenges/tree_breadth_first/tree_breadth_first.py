@@ -112,7 +112,6 @@ def breadth_first(tree):
    
     while queue:
 
-
         node=queue[0]
         if node.left != None:
             queue+=[node.left]
