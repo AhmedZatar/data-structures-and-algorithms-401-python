@@ -69,11 +69,11 @@ class Queue:
 
 if __name__ == "__main__":
 
-    # stack = Stack()
-    # stack.push(3)
-    # stack.push(-7)
-    # stack.push('d')
-    # print(stack.pop())
+    stack = Stack()
+    stack.push(3)
+    stack.push(-7)
+    stack.push('d')
+    print(stack.pop())
 
     queue = Queue()
     queue.enqueue(8)

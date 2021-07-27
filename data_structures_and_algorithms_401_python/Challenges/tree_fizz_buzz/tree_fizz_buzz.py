@@ -1,4 +1,3 @@
-
 class Node:
     def __init__(self, value):
         self.value = value
@@ -12,7 +11,6 @@ class KAryTree:
 def fizz_buzz_tree(kAryTree):
     
     def traverse(node):
-
         if node.children:
             for i in range(len(node.children)):
                 traverse(node.children[i])
