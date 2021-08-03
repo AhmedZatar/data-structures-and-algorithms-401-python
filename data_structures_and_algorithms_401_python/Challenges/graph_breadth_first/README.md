@@ -32,7 +32,7 @@ Write the following method for the Graph class:
 8. return node
 
 
-* Time--> O(n^2)
+* Time--> O(n)
 * space--> O(n)
 
 ## Solution
