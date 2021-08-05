@@ -25,6 +25,8 @@
 | Graph | [Press Here!](data_structures_and_algorithms_401_python/Data_Structures/graph/README.md) |
 | Graph Breadth First | [Press Here!](data_structures_and_algorithms_401_python/Challenges/graph_breadth_first/README.md) |
 | Graph Business Trip | [Press Here!](data_structures_and_algorithms_401_python/Challenges/graph_business_trip/README.md) |
+| Graph Depth First | [Press Here!](data_structures_and_algorithms_401_python/Challenges/graph_depth_first/README.md) |
+
 
 
 
